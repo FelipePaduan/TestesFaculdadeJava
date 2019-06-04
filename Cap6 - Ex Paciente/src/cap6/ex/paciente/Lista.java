@@ -1,6 +1,5 @@
 
 package cap6.ex.paciente;
-import java.time.LocalDate;
 public class Lista {
     private Paciente pacientes[];
     private int primeiro;

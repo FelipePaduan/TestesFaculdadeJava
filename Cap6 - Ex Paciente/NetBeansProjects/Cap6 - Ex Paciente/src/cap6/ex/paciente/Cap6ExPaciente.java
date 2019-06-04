@@ -19,5 +19,21 @@ public class Cap6ExPaciente {
         mut.mudarIdade(paciente1);
         System.out.println(paciente1.getIdade());
         System.out.println(Paciente.getCont());
+        Fila fila = new Fila(20);
+        fila.entrar(paciente1);
+        fila.entrar(paciente2);
+        fila.entrar(paciente3);
+        fila.entrar(paciente4);
+        fila.entrar(paciente5);
+        for(int i = 0; i < 5; i++){
+            System.out.println(fila.pacientes[i].getNome());
+        }
+        fila.atender();
+        for(int i = 0; i < 5; i++){
+            if(fila.pacientes[i] != null){
+                System.out.println(fila.pacientes[i].getNome());
+            }
+            
+        }
     }
 }
